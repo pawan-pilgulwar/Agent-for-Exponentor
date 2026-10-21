@@ -165,10 +165,10 @@ GEMINI_API_KEY=your-gemini-api-key
 LLM_API_KEYS=your-api-key
 ```
 
-Start the Compose stack from the repository root:
+In a second terminal, start the Compose stack from the repository root:
 
 ```powershell
-cd .\Agent
+cd Agent
 docker compose up -d --build
 ```
 
@@ -188,7 +188,7 @@ for application behavior.
 
 ## Connecting the web app to the Agent
 
-Set `AGENT_BASE_URL` in `JEMS-Application/.env` (default
+Set `AGENT_BASE_URL` in `JEMS-Application/.env.local` (default
 `http://localhost:8080`; replace it with the hosted URL later). AI features —
 roadmaps, coding-profile analysis, AI tests, mock interviews and candidate
 match insights — run as background tasks: results are stored in MongoDB
